@@ -63,7 +63,7 @@ class MultiStepQueryEngine(BaseQueryEngine):
         self._index_summary = index_summary
         self._num_steps = num_steps
         self._early_stopping = early_stopping
-        # TODO: make interface to stop function better
+        # TODO: make interface to stop function bet ter
         self._stop_fn = stop_fn or default_stop_fn
         # num_steps must be provided if early_stopping is False
         if not self._early_stopping and self._num_steps is None:
